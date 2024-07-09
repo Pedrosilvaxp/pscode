@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <title>PSCode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <nav class="navbar">
+            <!--NAV-LEFT-->
+            <div class="nav-left nav-divs">
+                <ul class="nav-ul">
+                    <li><abbr title="Pedro Silva Code"><img src="icons/icon.png" alt=""></abbr></li>
+                    <li class="nav-btns"><input type="button" value="Arquivo"></li>
+                    <li class="nav-btns"><input type="button" value="Editar"></li>
+                    <li class="nav-btns"><input type="button" value="Seleção"></li>
+                    <li class="nav-btns"><input type="button" value="Ver"></li>
+                    <li class="nav-btns"><input type="button" value="Acessar"></li>
+                </ul>
+            </div>
+            <!--NAV-CENTER-->
+            <div class="nav-center nav-divs">
+                <a href="#"><span style="font-size: 1.3em;" class="material-symbols-outlined">
+                    arrow_back
+                    </span></a>
+                <a href="#"><span style="font-size: 1.3em;" class="material-symbols-outlined">
+                    arrow_forward
+                    </span></a>
+                <input type="search" name="search" id="search" placeholder="Pscode">
+            </div>
+            <!--NAV-RIGHT-->
+            <div class="nav-right nav-divs">
+                <ul class="nav-ul">
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        list_alt
+                    </span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        inventory_2
+                        </span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        inbox
+                        </span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        outbox
+                        </span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">
+                            remove
+                            </span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        check_box_outline_blank
+                        </span></a></li>
+                        <!-- NOVA função -->
+                    <li><a href="#" onclick="close()"><span class="material-symbols-outlined">
+                        close
+                        </span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--END-OF-HEADER-->
+
+    <!--MAIN-->
+    <main>
+        <section class="lateral-buttons">
+            <!--LATERAL-BUTTONS-->
+            <div class="buttons-menu">
+                <div class="btn-top">
+                    <ul>
+                        <li><abbr title="Explorador (CTRL+Shift+E)">
+                            <a href="#"><span class="material-symbols-outlined">
+                                archive
+                                </span></a>
+                        </abbr></li>
+                        <li><abbr title="Pesquisar (Ctrl+Shift+F)">
+                            <a href="#"><span class="material-symbols-outlined">
+                                search
+                                </span></a>
+                        </abbr></li>
+                        <li><abbr title="Controle de Código Fonte (Ctrl+Shift+G)">
+                            <a href="#"><span class="material-symbols-outlined">
+                                call_split
+                                </span></a>
+                        </abbr></li>
+                        <li><abbr title="Executar e Depurar (Ctrl+Shift+D)">
+                            <a href="#"><span class="material-symbols-outlined">
+                                bug_report
+                                </span></a>
+                        </abbr></li>
+                        <li><abbr title="Extensões (Ctrl+Shift+X)">
+                            <a href="#"><span class="material-symbols-outlined">
+                                extension
+                                </span></a>
+                        </abbr></li>
+                        <li><abbr title="Teste">
+                            <a href="#"><span class="material-symbols-outlined">
+                                    science
+                                    </span>
+                            </a>
+                        </abbr></li>
+                        <li><abbr title="GitLens">
+                            <a href="#"><span class="material-symbols-outlined">
+                                hub
+                                </span></a>
+                        </abbr></li>
+                    </ul>
+                </div>
+
+                <div class="btn-down">
+                    <ul>
+                        <li><abbr title="Contas">
+                            <a href="#"><span class="material-symbols-outlined">
+                                person
+                                </span></a>
+                        </abbr></li>
+                        <li><abbr title="Gerenciar">
+                            <a href="#"><span class="material-symbols-outlined">
+                                settings
+                            </span></a>
+                        </abbr></li>
+                    </ul>
+                </div>
+            </div>
+            <!--END-OF-LATERAL-BUTTONS-->
+            <!-- LATERAL-ARCHIVES-BUTTONS -->
+             <div class="lateral-archives-buttons">
+                <p>EXPLORADOR <input type="button" value="..."></p>
+                <ul>
+                    <!-- HTML,CSS JS -->
+                    <li><a href="https://onecompiler.com/html"  target="iframe" class="link-archive"><img src="icons/html-icon.png" alt="" class="logo-archive">  index.html</a></li>
+
+                    <!-- JAVASCRIPT -->
+                    <li><a href="https://onecompiler.com/javascript" target="iframe" class="link-archive"><img src="icons/js-icon.png" alt="">  script.js</a></li>
+
+                    <!-- CSS -->
+                    <li><a href="https://onecompiler.com/html" target="iframe" class="link-archive"><img src="icons/css-icon.png" alt="">  style.css</a></li>
+
+                    <!-- PHP -->
+                    <li><a href="https://onecompiler.com/php" target="iframe" class="link-archive"><img src="icons/php-icon.png" alt="">  index.php</a></li>
+
+                    <!-- PYTHON -->
+                    <li><a href="https://onecompiler.com/python" target="iframe" class="link-archive"><img src="icons/python-icon.png" alt="">  main.py</a></li>
+
+                    <!-- JAVA -->
+                    <li><a href="https://onecompiler.com/java" target="iframe" class="link-archive"><img src="icons/java-icon.png" alt="">  main.java</a></li>
+                </ul>
+             </div>
+        </section>
+        <!-- END-OF-BUTTONS -->
+        
+        <!-- IFRAME EDITOR -->
+        <section class="iframe-editor">
+            <iframe src="" sandbox="allow-scripts allow-same-origin" referrerpolicy="" name="iframe" frameborder="0" width="1260" height="600"></iframe>
+        </section>
+    </main>
+    <!--END-OF-MAIN-->
+    
+    <!--Link-->
+    <aside>
+        <a href="https://github.com/Pedrosilvaxp" target="_blank"><img src="icons/git-icon.png" alt=""></a>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <nav class="footer-buttons">
+            <div>
+                <ul>
+                    <li><a href="#">
+                        <span style="background-color: #0078D4;  color: white;" class="material-symbols-outlined">
+                            arrow_outward
+                            </span>
+                    </a></li>
+
+                    <li><a href="#">
+                        <span class="material-symbols-outlined">
+                            hub
+                            </span>
+                    </a> main</li>
+
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        cloud_upload
+                        </span></a></li>
+
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        rocket_launch
+                        </span>Lauchpad</a></li>
+
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        cancel
+                        </span>0  <span class="material-symbols-outlined">
+                            warning
+                            </span> 0</a></li>
+
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        cell_tower
+                        </span> 0</a></li>
+
+                    <li><a href="#">Tests <span class="material-symbols-outlined">
+                        check
+                        </span> 0 <span class="material-symbols-outlined">
+                            close
+                            </span> 0</a></li>
+
+                    <li><a style="color: yellow;" href="#">coverage: disabled</a></li>
+
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Ln 206, Col 51</a></li>
+                    <li><a href="#">Espaços: 4</a></li>
+                    <li><a href="#">UTF-8</a></li>
+                    <li><a href="#">CRLF</a></li>
+                    <li><a href="#">{} HTML</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        block
+                        </span> Port : 0000</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        done_all
+                        </span> Prettier</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        notifications
+                        </span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
