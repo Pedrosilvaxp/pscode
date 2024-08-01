@@ -147,3 +147,17 @@ footer ul {
     align-items: center;
 }
 footer a {color: var(--cor-principal); text-decoration: none;}
+
+@media (max-width: 830px) {
+    .nav-center {
+        display: none;
+    }
+    .foot-right {
+        display: none;
+    }
+}
+@media (max-width: 526px) {
+    .nav-right {
+        display: none;
+    }
+}
